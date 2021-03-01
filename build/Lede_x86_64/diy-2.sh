@@ -18,5 +18,5 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 #sed -i 's/PATCHVER:=5.4/PATCHVER:=5.49/g' target/linux/x86/Makefile
 
 # 修改插件名字（修改名字后不知道会不会对插件功能有影响，自己多测试）
-sed -i 's/"BaiduPCS Web"/"百度网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
+sed -i 's/"BaiduPCS Web"/"百毒网盘"/g' package/lean/luci-app-baidupcs-web/luasrc/controller/baidupcs-web.lua
 sed -i 's/cbi("qbittorrent"),_("qBittorrent")/cbi("qbittorrent"),_("BT下载")/g' package/lean/luci-app-qbittorrent/luasrc/controller/qbittorrent.lua
