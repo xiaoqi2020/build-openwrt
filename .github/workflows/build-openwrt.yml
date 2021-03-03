@@ -127,9 +127,6 @@ jobs:
         if [ ${{matrix.target}} != "openwrt" ]; then
           git clone -b $REPO_BRANCH --single-branch https://github.com/281677160/openwrt-package package/danshui
         fi
-          git clone -b $REPO_BRANCH --single-branch https://github.com/fw876/helloworld package/diycj/helloworld
-          git clone -b $REPO_BRANCH --single-branch https://github.com/jerrykuku/luci-app-vssr.git package/diycj/vssr
-          git clone -b $REPO_BRANCH --single-branch https://github.com/jerrykuku/lua-maxminddb.git package/diycj/vssryl
         ./scripts/feeds clean && ./scripts/feeds update -a && ./scripts/feeds install -a && ./scripts/feeds install -a
         if [ -f "build/${{matrix.target}}/$DIY_P2_SH" ]; then
           chmod +x build/${{matrix.target}}/$DIY_P2_SH
