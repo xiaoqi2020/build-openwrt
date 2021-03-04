@@ -8,7 +8,7 @@
 # 软件包地址：https://github.com/281677160/openwrt-package
 # 拉取插件请看《各种命令的简单介绍》第4条、第5条说明,不管大神还是新手请认真的看看,再次强调请不要一下子就拉取别人一堆插件的插件包,容易造成编译错误的
 # git clone https://github.com/godros/luci-app-godproxy.git package/diycj/luci-app-godproxy 原版
-git clone https://github.com/xiaoqi2020/luci-app-godproxy.git package/diycj/luci-app-godproxy
+git clone https://github.com/xiaoqi2020/luci-app-godproxy.git package/diycj/luci-app-godproxy #修改规则为国内加速地址
 git clone https://github.com/fw876/helloworld.git package/diycj/helloworld
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/diycj/vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/diycj/vssryl
