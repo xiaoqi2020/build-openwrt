@@ -31,35 +31,178 @@ config smartdns
 config server
 	option enabled '1'
 	option type 'udp'
-	option name '114dns'
-	option ip '114.114.114.114'
-	option port '53'
-
-config server
-	option enabled '1'
-	option type 'udp'
-	option name '阿里'
-	option ip '223.5.5.5'
-	option port '53'
-
-config server
-	option enabled '1'
-	option type 'udp'
-	option name '腾讯'
-	option ip '119.29.29.29'
-	option port '53'
-
-config server
-	option enabled '1'
-	option type 'udp'
-	option name '百度'
+	option name '百度DNS'
 	option ip '180.76.76.76'
 	option port '53'
 
 config server
 	option enabled '1'
+	option name '百度DNS'
+	option ip '180.76.76.76'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
 	option type 'udp'
-	option name 'CNNIC'
+	option name '阿里DNS'
+	option ip '223.5.5.5'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '阿里DNS'
+	option ip '223.5.5.5'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '114DNS'
+	option ip '114.114.114.114'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '114DNS'
+	option ip '114.114.114.114'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '中科大'
+	option ip '202.38.93.153'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '中科大'
+	option ip '202.141.162.123'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'DNS派'
+	option ip '101.226.4.6'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name 'DNS派'
+	option ip '101.226.4.6'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '360DNS'
+	option ip '101.226.4.6'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '360DNS'
+	option ip '101.226.4.6'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '中国互联网络中心'
 	option ip '1.2.4.8'
 	option port '53'
 
+config server
+	option enabled '1'
+	option name '中国互联网络中心'
+	option ip '1.2.4.8'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '自建天翼云'
+	option ip '182.43.141.210'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip '8.8.8.8'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip '8.8.4.4'
+	option type 'tls'
+	option port '853'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name '谷歌DNS'
+	option ip 'tls://dns.google'
+	option port '853'
+	option type 'tls'
+	option no_check_certificate '0'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'oneDNS'
+	option ip '101.226.4.6'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'Cloudfiare'
+	option ip '1.1.1.1'
+	option port '853'
+	option type 'tls'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '成都电信'
+	option ip '61.139.2.69'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '成都电信'
+	option ip '61.139.2.69'
+	option port '53'
+	option type 'tcp'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '成都电信'
+	option ip '202.98.96.68'
+	option port '53'
+
+config server
+	option enabled '1'
+	option name '成都电信'
+	option ip '202.98.96.68'
+	option port '53'
+	option type 'tcp'
