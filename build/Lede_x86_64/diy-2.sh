@@ -12,8 +12,8 @@ sed -i "s/OpenWrt /小麒 build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" packa
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # 设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
-#sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/root::0:0:99999:7:::/root:$1$F7uHaCc/$8xWiFL6Fqk90S3X.pCVLf0:18589:0:99999:7:::' package/base-files/files/etc/shadow
+# sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
+# sed -i 's/root::0:0:99999:7:::/root:$1$F7uHaCc/$8xWiFL6Fqk90S3X.pCVLf0:18589:0:99999:7:::' package/base-files/files/etc/shadow
 
 # 修改内核版本
 #sed -i 's/PATCHVER:=5.4/PATCHVER:=5.49/g' target/linux/x86/Makefile
