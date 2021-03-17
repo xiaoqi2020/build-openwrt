@@ -32,7 +32,7 @@ env:
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
   TZ: Asia/Shanghai
-  #GITHUB_RELEASE: https://github.com/281677160/build-openwrt/releases 发布地址
+  #GITHUB_RELEASE: https://github.com/xiaoqi2020/by-openwrt/releases 发布地址
 
 jobs: 
   build:
