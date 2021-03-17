@@ -1,10 +1,7 @@
-
 config smartdns
 	option server_name 'smartdns'
 	option port '6053'
 	option tcp_server '1'
-	option dualstack_ip_selection '0'
-	option prefetch_domain '0'
 	option serve_expired '1'
 	option redirect 'dnsmasq-upstream'
 	option cache_size '5120'
@@ -13,17 +10,21 @@ config smartdns
 	option rr_ttl_max '600'
 	option seconddns_port '6553'
 	option seconddns_tcp_server '1'
-	option seconddns_no_speed_check '0'
 	option seconddns_no_rule_addr '0'
 	option seconddns_no_rule_nameserver '0'
 	option seconddns_no_rule_ipset '0'
 	option seconddns_no_rule_soa '0'
-	option seconddns_no_dualstack_selection '0'
-	option seconddns_no_cache '0'
 	option force_aaaa_soa '0'
 	option coredump '0'
 	option enabled '1'
-	option ipv6_server '0'
+	option seconddns_enabled '1'
+	option ipv6_server '1'
+	option dualstack_ip_selection '1'
+	option prefetch_domain '1'
+	option seconddns_server_group 'FQ'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_dualstack_selection '1'
+	option seconddns_no_cache '1'
 	list old_redirect 'dnsmasq-upstream'
 	list old_port '6053'
 	list old_enabled '1'
@@ -206,3 +207,66 @@ config server
 	option ip '202.98.96.68'
 	option port '53'
 	option type 'tcp'
+
+config server
+	option enabled '1'
+	option name '谷歌IPV6'
+	option ip '2001:4860:4860::8888'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+	option port '853'
+	option type 'tls'
+
+config server
+	option enabled '1'
+	option name '谷歌IPV6'
+	option ip '2001:4860:4860::8844'
+	option server_group 'FQ'
+	option blacklist_ip '0'
+	option port '853'
+	option type 'tls'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '阿里 IPv6'
+	option ip '2400:3200::1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '阿里 IPv6'
+	option ip '2400:3200:baba::1'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '互联网北京研究中心'
+	option ip '240C::6666'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '互联网北京研究中心'
+	option ip '240C::6644'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'CNNIC IPv6 DNS 服务器'
+	option ip '240C::6644'
+
+config server
+	option enabled '1'
+	option name '谷歌ipv6'
+	option ip '2001:4860:4860::8888'
+	option port '853'
+	option type 'tls'
+
+config server
+	option enabled '1'
+	option name '谷歌ipv6'
+	option ip '2001:4860:4860::8844'
+	option port '853'
+	option type 'tls'
+
