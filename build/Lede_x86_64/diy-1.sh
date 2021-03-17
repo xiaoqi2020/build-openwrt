@@ -13,5 +13,5 @@ git clone https://github.com/fw876/helloworld.git package/diycj/helloworld
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/diycj/vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/diycj/vssryl
 git clone https://github.com/garypang13/luci-app-bypass.git package/diycj/bypass
-git clone https://github.com/garypang13/openwrt-packages/tree/master/lua-maxminddb.git package/diycj/bypassyl
-git clone https://github.com/garypang13/openwrt-packages/tree/master/smartdns-le.git package/diycj/bypassyl
+git clone https://github.com/garypang13/openwrt-packages/tree/master/lua-maxminddb package/diycj/bypassyl
+git clone https://github.com/garypang13/openwrt-packages/tree/master/smartdns-le package/diycj/bypassyl
