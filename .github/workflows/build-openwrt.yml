@@ -162,7 +162,6 @@ jobs:
         git clone https://github.com/openwrt-dev/po2lmo.git
         pushd po2lmo
         make && sudo make install
-        cd openwrt
         popd
         
     - name: 执行bypass命令
