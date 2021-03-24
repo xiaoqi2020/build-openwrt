@@ -12,11 +12,9 @@ git clone https://github.com/godros/luci-app-godproxy.git package/diycj/luci-app
 git clone https://github.com/fw876/helloworld.git package/diycj/helloworld
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/diycj/vssr
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/diycj/vssryl
-git clone https://github.com/garypang13/luci-app-bypass
-git clone https://github.com/garypang13/smartdns-le
-svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go
-svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus
-svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/diycj/passwall
-git clone https://github.com/kenzok8/small package/diycj/passwallyl
+git clone https://github.com/garypang13/luci-app-bypass package/diycj/bypass
+git clone https://github.com/garypang13/smartdns-le package/diycj/smartdns-le
+svn co https://github.com/garypang13/openwrt-packages/trunk/lua-maxminddb package/diycj/Lua-Maxminddb
+svn co https://github.com/garypang13/openwrt-packages/trunk/chinadns-ng package/diycj/chinadns-ng
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-go package/diycj/trojan-go
+svn co https://github.com/garypang13/openwrt-packages/trunk/trojan-plus package/diycj/trojan-plus
