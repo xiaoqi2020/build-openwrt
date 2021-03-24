@@ -165,7 +165,7 @@ jobs:
         cd openwrt
         popd
         
-    - 名字: 执行bypass命令
+    - name: 执行bypass命令
       run: |
         cd openwrt
         find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
