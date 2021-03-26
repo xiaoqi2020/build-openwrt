@@ -164,11 +164,11 @@ jobs:
         make && sudo make install
         popd
         
-    - name: Enable dependency shadowsocksr-libev-ssr-redir
-      run: cd openwrt && find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+  #  - 名字: Enable dependency shadowsocksr-libev-ssr-redir
+  #    run: cd openwrt && find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 
-    - name: Enable dependency shadowsocksr-libev-ssr-server
-      run: cd openwrt && find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
+  #  - 名字: Enable dependency shadowsocksr-libev-ssr-server
+  #    run: cd openwrt && find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
  
     - name: SSH远程连接（若打开了此功能,在此转圈2分钟还展开不了,请看《SSH连接教程》）
       uses: 281677160/debugger-action@master
