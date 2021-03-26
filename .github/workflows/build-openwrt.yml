@@ -12,7 +12,7 @@ on:
       ssh:
         description: 'SSH远程'
         required: true
-        default: 'ssh-actions'
+        default: 'ssh'
       wxtz:
         description: '微信通知'
         required: true
@@ -20,7 +20,7 @@ on:
       release:
         description: '发布固件'
         required: true
-        default: 'release-actions'
+        default: 'release'
 
 #定时触发开始编译(把下面两个#去掉开启,时间设置请看定时编译说明)
 #  schedule:
