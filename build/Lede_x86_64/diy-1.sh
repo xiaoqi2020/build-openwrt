@@ -14,3 +14,4 @@ git clone https://github.com/jerrykuku/lua-maxminddb.git package/vssryl
 #git clone https://github.com/garypang13/luci-app-bypass package/bypass
 #git clone https://github.com/solomonricky/lua-maxminddb package/lua-maxminddb
 #git clone https://github.com/solomonricky/smartdns-le package/smartdns-le
+git clone https://github.com/xiaorouji/openwrt-passwall package/passwall
